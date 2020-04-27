@@ -2,12 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Movie = props => {
-  const {id, title, summary, poster, year} = props
+  const {title, summary, poster, year, genres} = props
   return (
-    <div>
-      <h4>{title}</h4>
-    </div>
-  )
+    <>
+      <img src={poster} alt={title} title={title} />
+      <div>
+        <h2>{title}</h2>
+        <span>{year}</span>
+        <ul>
+          {genres.map((genre) => (
+            <li key={genre}>{genre}</li>
+          ))}
+        </ul>
+          <p>{summary}</p>
+      </div>
+    </>
+  );
 }
 
 Movie.propTypes = {
@@ -15,7 +25,8 @@ Movie.propTypes = {
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
-  year: PropTypes.number.isRequired
+  year: PropTypes.number.isRequired,
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default Movie
