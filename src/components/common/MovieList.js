@@ -7,5 +7,4 @@ export const MovieList = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 50px;
 `

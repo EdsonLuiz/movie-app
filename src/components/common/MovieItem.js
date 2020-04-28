@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const MovieItem = styled.div`
-  width: 45%;
+  width: 48%;
   padding: 20px;
   background-color: #fff;
   margin-bottom: 70px;
@@ -14,7 +14,7 @@ export const MovieItem = styled.div`
     0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 
   img {
-    max-width: 200px;
+    max-width: 170px;
     width: 100%;
     position: relative;
     top: -50px;

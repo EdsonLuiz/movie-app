@@ -25,7 +25,7 @@ export const MovieContent = styled.div`
   }
 
   ul li + li {
-    margin-left: 10px;
+    margin-left: 5px;
 
   }
 
