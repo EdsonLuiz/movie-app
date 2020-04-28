@@ -1,22 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { MovieItem, MovieContent } from '../common';
 
 const Movie = props => {
   const {title, summary, poster, year, genres} = props
   return (
-    <>
+    <MovieItem>
       <img src={poster} alt={title} title={title} />
-      <div>
+      <MovieContent>
         <h2>{title}</h2>
-        <span>{year}</span>
+        <h3>{year}</h3>
         <ul>
           {genres.map((genre) => (
             <li key={genre}>{genre}</li>
           ))}
         </ul>
-          <p>{summary}</p>
-      </div>
-    </>
+        <p>{summary.slice(0, 140)}...</p>
+      </MovieContent>
+    </MovieItem>
   );
 }
 
