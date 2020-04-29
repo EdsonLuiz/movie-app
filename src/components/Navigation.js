@@ -59,8 +59,6 @@ const Navigation = () => {
         <Nav>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><a href="#">df</a></li>
-            <li><a href="#">df</a></li>
           </ul>
         </Nav>
       </NavContainer>
