@@ -1,3 +1,21 @@
 # Movie app
+Aplicativo que apresenta em forma de lista os resultados da base de dados yts-proxy.
 
-React JS Fundamentals Course
+## Tecnologias utilizadas
+- React
+  - hooks
+  - styled components
+  - styled reset
+- Axios
+
+## Como executar?
+
+```bash
+$ git clone https://github.com/EdsonLuiz/movie-app
+
+$ cd movie-app
+
+$ npm i
+
+$ npm start
+```
